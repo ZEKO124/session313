@@ -1,7 +1,8 @@
 {
-  "name": "sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
-  "description": "A Telegram Bot to generate Telethon and Pyrogram String Session.",
-  "logo": "https://telegra.ph/file/4384143211a0905238ce4.jpg",
+  "name": "تنصيب بوت استراج الاكواد مقدم من سورس بلاكثون",
+  "description": "From here you can create a code-mining bot provided by SourceBlackthon
+.",
+  "logo": "https://graph.org/file/6b7514dc882e113d162fa.jpg",
   "keywords": [
     "telegram",
     "bot",
@@ -19,32 +20,32 @@
       "value": "ANYTHING"
     },
     "API_ID": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "ايبي ايدي .telegram.org/apps.",
       "required": true,
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "ايبي هاش.telegram.org/apps.",
       "required": true,
       "value": ""
     },
     "OWNER_ID": {
-      "description": "Telegram id of the person who will known as owner of the bot.",
+      "description": "ايدي المطور .",
       "required": true,
       "value": ""
     },
     "MONGO_DB_URI": {
-      "description": "Get this value from cloud.mongodb.com",
+      "description": "اكتب اي شي هنا ",
       "required": true,
       "value": ""
     },
     "MUST_JOIN": {
-      "description": "Username of a group or channel for which you want to set force sub.(without @)",
+      "description": "يوزر قناتك او كروبك  ورافع البوت مشرف .(بدون @)",
       "required": true,
-      "value": "DevilsHeavenMF"
+      "value": ""
     },
     "BOT_TOKEN": {
-      "description": "Get this value from @BotFather",
+      "description": "توكن البوت@BotFather",
       "required": true,
       "value": ""
     }
