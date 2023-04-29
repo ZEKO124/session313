@@ -20,11 +20,11 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(
-                    photo="https://graph.org/file/6b7514dc882e113d162fa.jpg", caption=f"» اشترك في قناه البوت لكي يعمل بشكل صحيح [اضغط هنا للأشتراك]({link}) ʏᴇᴛ,  [اضغط هنا للأشتراك]({link}) اضغط ستارت مره اخرى  !",
+                    photo="https://graph.org/file/6b7514dc882e113d162fa.jpg", caption=f"» اشترك في قناه البوت لكي يعمل بشكل صحيح [اضغط هنا للأشتراك]({link}) ,  [اضغط هنا للأشتراك]({link}) /start  من بعد الاشتراك اضغط   !",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("</> ᴅᴇᴠɪʟs ʜᴇᴀᴠᴇɴ", url=link),
+                                InlineKeyboardButton("</> 👨🏻‍💻قناة السورس", url=link),
                             ]
                         ]
                     )
