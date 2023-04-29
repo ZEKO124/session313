@@ -17,7 +17,7 @@ async def start(bot: Client, msg: Message):
 مرحبا بك عزيزي {me2},
 اضغط استخراج الجلسه .
 
-قناه السورس🖤 : [BlackThon](tg://user?id={OWNER_ID}) !""",
+قناه السورس🖤 : [BlackThon](https://t.me/gibthon7) !""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
