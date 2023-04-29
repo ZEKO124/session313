@@ -24,7 +24,7 @@ async def start(bot: Client, msg: Message):
                     InlineKeyboardButton(text="🔱اضغط لبدأ الاسترخراج🔱", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("💻السورس💻", url="https://t.me/L_H_V"),
+                    InlineKeyboardButton("💻السورس💻", url="https://t.me/gibthon7"),
                     InlineKeyboardButton("🇮🇶المطور🇮🇶", user_id=OWNER_ID)
                 ]
             ]
