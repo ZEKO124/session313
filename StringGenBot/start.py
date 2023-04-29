@@ -14,18 +14,18 @@ async def start(bot: Client, msg: Message):
         chat_id=msg.chat.id,
         text=f"""Hᴇʏ {msg.from_user.mention},
 
-Tʜɪs ɪs {me2},
-Aɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ.
+مرحبا بك عزيزي {me2},
+اضغط استخراج الجلسه .
 
-Mᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ : [𝐒𝐇𝐀𝐑𝐊](tg://user?id={OWNER_ID}) !""",
+قناه السورس🖤 : [BlackThon](tg://user?id={OWNER_ID}) !""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="🙄 ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 🙄", callback_data="generate")
+                    InlineKeyboardButton(text="🔱اضغط لبدأ الاسترخراج🔱", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊", url="https://t.me/L_H_V"),
-                    InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=OWNER_ID)
+                    InlineKeyboardButton("💻السورس💻", url="https://t.me/L_H_V"),
+                    InlineKeyboardButton("🇮🇶المطور🇮🇶", user_id=OWNER_ID)
                 ]
             ]
         ),
