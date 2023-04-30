@@ -37,13 +37,16 @@ import config
 ask_ques = "**» • ذا كنـت تـريد تنـصيـب سـورس مـيوزك فـأختـار بـايـروجـرام\n• واذا تـريـد تنـصـيب التليثون فـأخـتار تيرمكـس\n• اذا كنـت سـورسـك مـتحـدث مـع اخـر تحديثات الـباروجـرام فا اخـتار بـايـروجـرام [New] \n• يوحد استخرجات جـلسـات لـي البـوتات :**"
 buttons_ques = [
     [
-        InlineKeyboardButton(" بـايـࢪوجـࢪام ", callback_data="pyrogram1"),
-        InlineKeyboardButton("🎙 بـايـࢪوجـࢪام 🎙", callback_data="pyrogram"),
+        InlineKeyboardButton("🎙 بـايـࢪوجـࢪام 🎙", callback_data="pyrogram1"),
+        InlineKeyboardButton("🎙 بـايـࢪوجـࢪام ᴠ2🎙", callback_data="pyrogram"),
     ],
     [
         InlineKeyboardButton("🎛 تـلـيـثـونـ 🎛", callback_data="telethon"),
     ],
-   
+    [
+        InlineKeyboardButton("📟  بـايـࢪوجـࢪام بـوتـ  📟", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("🕹 تـلـيـثـونـ بـوتـ 🕹", callback_data="telethon_bot"),
+    ],
 ]
 
 gen_button = [
@@ -140,7 +143,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             else:
                 await client.sign_in(phone_number, code.phone_code_hash, phone_code)
         except (PhoneCodeInvalid, PhoneCodeInvalidError, PhoneCodeInvalid1):
-            await msg.reply("» آلگود آلي دزيته ‏‏ غلطـ **رگز يـﮯقلب.**\n\nآعمـل آسـترت عشـآن تسـتخرج جلسـهہ‏‏ مـ آلآول.", reply_markup=InlineKeyboardMarkup(gen_button))
+            await msg.reply("» آلگود آل بعتهہ‏‏ غلطـ **رگز يـﮯقلب.**\n\nآعمـل آسـترت عشـآن تسـتخرج جلسـهہ‏‏ مـ آلآول.", reply_markup=InlineKeyboardMarkup(gen_button))
             return
         except (PhoneCodeExpired, PhoneCodeExpiredError, PhoneCodeExpired1):
             await msg.reply("» آلگود مـنهہ‏‏يـﮯ **مدته انتهت.**\n\nآعمـل آسـترت عشـآن تسـتخرج جلسـهہ‏‏ مـ آلآول", reply_markup=InlineKeyboardMarkup(gen_button))
@@ -171,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"جلستك يبروو {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ :** @ \n🍒 **ɴᴏᴛᴇ :** حافظ عليها ممكن حد يخترقكك بيها\n اشترك بالحب @gibthon7 "
+    text = f"جلستك يبروو {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ :** @iiqllll \n🍒 **ɴᴏᴛᴇ :** حافظ عليها ممكن حد يخترقكك بيها\n اشترك بالحب @pp_g3 🥺"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -180,7 +183,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "» » ✅تم استخراج الجلسه بنجاح ️ {} .\n\n🔍من فضلك تفحص الرسايل المحفوظه بحسابك!  ! \n\n**المطور zeko** @gibthon7 🥺".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
+    await bot.send_message(msg.chat.id, "» » ✅تم استخراج الجلسه بنجاح ️ {} .\n\n🔍من فضلك تفحص الرسايل المحفوظه بحسابك!  ! \n\n**ĐËV ŹËÏŅ** @iiqllll 🥺".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
 
 
 async def cancelled(msg):
