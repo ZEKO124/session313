@@ -110,7 +110,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
     try:
         phone_code_msg = None
         if not is_bot:
-            phone_code_msg = await bot.ask(user_id, "»  **ᴏᴛᴩ** يرجى ارسالها بالشكل التالي 1 2 3 4 5 مع وجود مسـافـات بين الارقام اذا احتجت مساعدة @zeko124..\nɪғ ᴏᴛᴩ ɪs `12345`, ** k** `1 2 3 4 5`.", filters=filters.text, timeout=600)
+            phone_code_msg = await bot.ask(user_id, "»  ** ** يرجى ارسالها بالشكل التالي 1 2 3 4 5 مع وجود مسـافـات بين الارقام اذا ..\  ` `, ** ** `1 2 3 4 5`.", filters=filters.text, timeout=600)
             if await cancelled(phone_code_msg):
                 return
     except TimeoutError:
@@ -131,9 +131,9 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
             return
         except (SessionPasswordNeeded, SessionPasswordNeededError):
             try:
-                two_step_msg = await bot.ask(user_id, "» ᴩʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ **ᴛᴡᴏ sᴛᴇᴩ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ** ᴩᴀssᴡᴏʀᴅ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.", filters=filters.text, timeout=300)
+                two_step_msg = await bot.ask(user_id, "» **هذا الحساب محمي من خلال التحقق بخطوتين. من فضلك ارسل 🔑 كلمه االمرور ..", filters=filters.text, timeout=300)
             except TimeoutError:
-                await msg.reply("» ᴛɪᴍᴇ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5 ᴍɪɴᴜᴛᴇs.\n\nᴩʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ sᴇssɪᴏɴ ᴀɢᴀɪɴ.", reply_markup=InlineKeyboardMarkup(gen_button))
+                await msg.reply("» تم انتهاء وقت الجلسه 10 دقائق يرجى اعاده استخراج الجلسه من البدايه ..\n\ .", reply_markup=InlineKeyboardMarkup(gen_button))
                 return
             try:
                 password = two_step_msg.text
